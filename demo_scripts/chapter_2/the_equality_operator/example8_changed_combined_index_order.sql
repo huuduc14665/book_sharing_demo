@@ -37,7 +37,6 @@ for idx_rec in 1..n_of_recs loop
       random_last_name := (array['Martin', 'Nguyen', 'Johnson'])[floor(random() * 3 + 1)];
       -- some random date
       random_date := DATE '2018-01-01' + (random() * 700)::integer;
-      random_date := DATE '2018-01-01' + (random() * 700)::integer;
       -- some random sub from the set 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
       random_sub := (array[10, 20, 30, 40, 50, 60, 70, 80, 90, 100])[floor(random() * 10 + 1)];
       query := 'insert into employees values($1, $2, $3, $4, $5, $6)';

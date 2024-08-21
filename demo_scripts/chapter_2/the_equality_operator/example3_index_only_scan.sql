@@ -6,7 +6,7 @@ CREATE TABLE employees (
   last_name VARCHAR(1000) NOT NULL,
   date_of_birth DATE NOT NULL,
   phone_number VARCHAR(1000) NOT NULL,
-  subsidiary_id INT NOT NULL,
+  subsidiary_id INT NOT NULL
 );
 
 CREATE UNIQUE INDEX employees_pk ON employees (subsidiary_id, employee_id);
